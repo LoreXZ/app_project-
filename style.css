@@ -1,0 +1,108 @@
+:root {
+    --branca: #ffffff;
+    --preta: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caixa {
+    background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)100%);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+}
+
+header .logo {
+    position: relative;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px;
+    font-family: arial, sans-serif;
+}
+
+header nav a:hover {
+    color: #929292;    
+}
+
+.container div a{
+    text-decoration: none;
+    color: var(--preta);
+    margin: 10px;
+}
+
+.pesquisa {
+    padding-top: 38px ;
+    text-align: center;
+}
+  
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 46px;
+}
+  
+.search-form button[type="submit"] {
+    padding: 20px 10px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.menu{
+    padding-top: 40px ;
+    text-align: center;
+}
+
+nav a{
+    color: var(--preta);
+    margin: 10px;
+	font-size: 22px;
+	font-family: arial;
+}
+
+nav a:hover {
+    color: #929292;    
+}
+
+.carousel {
+    padding-top: 43px ;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+.carousel-slide {
+    display: none;
+  }
+  
+.carousel-slide img {
+    width: 100%;
+    height: 600px;
+  }
+  
+  /* Adicionando animação para o carrossel */
+.carousel-slide.active {
+    display: block;
+    animation: slide-in 1s ease-in-out;
+}
+  
+@keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
